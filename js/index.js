@@ -61,6 +61,25 @@ menuItem4.textContent = siteContent['nav']['nav-item-4']
 menuItem5.textContent = siteContent['nav']['nav-item-5']
 menuItem6.textContent = siteContent['nav']['nav-item-6']
 
+const newNav1 = document.createElement("menu");
+
+newNav1.textContent = "New1";
+
+const navParent = document.querySelector('nav');
+navParent.append(newNav1);
+
+const newNav2 = document.createElement("menu2");
+
+newNav2.textContent = "New2";
+
+const navParent2 = document.querySelector('nav');
+navParent2.prepend(newNav2);
+
+console.log(menuList);
+for (let i = 0; i < menuList.length; i++) {
+  menuList[i].style.color = 'green';
+}
+
 //img srcing---------------------------------------------------------------
 
 let headImg = document.getElementById("cta-img");
