@@ -79,6 +79,7 @@ newNav1.style.color = 'green';
 
 newNav2.style.color = 'green';
 
+
 console.log(menuList);
 for (let i = 0; i < menuList.length; i++) {
   menuList[i].style.color = 'green';
@@ -94,10 +95,10 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 //heading content----------------------------------------------------------
 const ctaTitle = document.querySelector('h1');
-ctaTitle.innerText = 'DOM IS AWESOME';
+ctaTitle.textContent = siteContent['cta']['h1'];
 
 const ctaBtn = document.querySelector('button');
-ctaBtn.innerText = 'Get Started';
+ctaBtn.textContent = siteContent['cta']['button'];
 
 //top content--------------------------------------------------------------
 const topContentInfo = document.querySelectorAll('.top-content .text-content p');
