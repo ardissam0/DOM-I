@@ -61,19 +61,23 @@ menuItem4.textContent = siteContent['nav']['nav-item-4']
 menuItem5.textContent = siteContent['nav']['nav-item-5']
 menuItem6.textContent = siteContent['nav']['nav-item-6']
 
-const newNav1 = document.createElement("menu");
+const newNav1 = document.createElement("a");
 
 newNav1.textContent = "New1";
 
 const navParent = document.querySelector('nav');
-navParent.append(newNav1);
+navParent.appendChild(newNav1);
 
-const newNav2 = document.createElement("menu2");
+const newNav2 = document.createElement("a");
 
 newNav2.textContent = "New2";
 
 const navParent2 = document.querySelector('nav');
 navParent2.prepend(newNav2);
+
+newNav1.style.color = 'green';
+
+newNav2.style.color = 'green';
 
 console.log(menuList);
 for (let i = 0; i < menuList.length; i++) {
